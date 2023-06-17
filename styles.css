@@ -1,0 +1,328 @@
+/* font-family: 'Great Vibes', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Wix Madefor Text', sans-serif; */
+:root {
+    --blue-10: #041e3c;
+    --blue-9: #042b59;
+    --blue-8: #043875;
+    --blue-7: #0553b1;
+    --blue-6: #0468d7;
+    --primary: #0468d7;
+    --blue-5: #027dfd;
+    --blue-4: #13b9fd;
+    --blue-3: #81ddf9;
+    --blue-2: #b8eafe;
+    --blue-1: #e7f8ff;
+    --pink: #f8bbd0;
+    --red: #d43324;
+    --coral: #f25d50;
+    --coral7: #ed9363;
+    --coral8: #ca7348;
+    --coral10: #9e4a20;
+    --violet-4: #833ef2;
+    --violet-3: #796ceb;
+    --violet-2: #6200ee;
+    --violet-1: #c6bafa;
+    --green-3: #14c2ad;
+    --green-2: #a7ffeb;
+    --green-1: #1cdac5;
+    --grey-6: #4a4a4a;
+    --grey-5: #a4a4a4;
+    --grey-4: #dadce0;
+    --grey-3: #e8eaed;
+    --grey-2: #f1f3f4;
+    --grey-1: #f8f9fa;
+    --ui-drop-shadow: 0px 8px 24px rgba(0,0,0,.25);
+}
+
+body{
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-family: 'Montserrat:wght700', sans-serif;
+    font-size: 64px;
+    font-weight: bolder;
+}
+h2{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+}
+h3{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 1rem;
+}
+p{
+    font-family: 'Wix Madefor Text', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+a{
+    width: fit-content;
+    color: white;
+}
+a:hover{
+    color: #6200ee;
+    text-decoration: none;
+}
+.title{
+    margin: 6rem 0;
+    text-align: center;
+}
+.top-page-name{
+    margin: 0 1rem;
+    font-family: 'Great Vibes', cursive;
+    font-size: 32px;
+    font-weight: 700;
+}
+.navbar{
+    box-shadow: var(--ui-drop-shadow);;
+}
+
+/* *********************** About Me Section ********************* */
+.homeSection{
+    background-image: linear-gradient(35deg,#e6e4fd 10%,#f3fcff 60%);
+    padding: 14rem 0 4rem;
+}
+.circle{
+    background-image:linear-gradient(-35deg,transparent 50%,var(--violet-4) 90%),linear-gradient(-125deg,transparent 60%, var(--coral7) 90% ) ;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.intro-title{
+    display: inline-block;
+    max-width: 30rem;
+    line-height: 4rem;
+    
+   }
+.profile-pic{
+    max-width: 350px;
+    border-radius: 10px;
+    position: relative;
+    right: 130px;
+    rotate: 25deg;
+
+}
+
+.profile-intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+} 
+.description{
+    margin: 110px auto 0;
+    text-align: center;
+    font-size: 24px;
+    line-height: 2.5rem;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+
+/* *********************** Skills Section ********************* */
+.skills{
+    margin: 3rem 1rem 10rem;
+    display: flex;
+    justify-content: center;
+}
+.skill{
+    width: 180px;
+    padding: 1rem;
+    background-color: white;
+}
+.skill-box{
+    width:fit-content;
+    text-align: center;
+    margin: 1rem;
+    border-radius: 3%;
+    display: inline-block;
+    box-shadow: 3px 3px 8px 8px rgb(236, 236, 236);
+}
+.pl{
+    width: 150px;
+    padding: 1rem;
+    background-color: white;
+}
+.column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.column1{
+    position: relative;
+    bottom: 70px;
+    left: 90px;
+    align-items: end;
+}
+.column3{
+    position: relative;
+    bottom: 70px;
+    right: 90px;
+    align-items: start;
+}
+.logo-buttom{
+    
+    display: flex;
+    justify-content: center;
+}
+.MYSQL{
+    padding: 4%;
+}
+
+/* *********************** Projects Section Section ********************* */
+.projects-section{
+    display: block;
+    padding: 3rem 0 8rem;
+    color: #fff;
+    background-color: var(--violet-3);
+    background-image:linear-gradient(to bottom, var(--violet-4) 20%, transparent 60%),radial-gradient(ellipse at 160% -150%,transparent 80%,var(--violet-4) 80%);
+}
+.projects-section > h2{
+    margin: 4rem 0;
+    text-shadow: none;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 350px;
+    border-radius: 16px;
+}
+.github-link{
+    color:  #6200ee;
+    width: fit-content;
+    padding: 4px 8px;
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: #f3fcff;
+    text-decoration: none;
+}
+.github-link:hover{
+    color: white;
+    background-color: black;
+}
+.projects-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 750px;
+    margin: 0 auto;
+}
+.project:hover{
+    background-color: hsla(0,0%,100%,.15);
+    box-shadow: var(--ui-drop-shadow);
+}
+
+/* *********************** Education And Experience Section ********************* */
+.education-section{
+    margin: 10rem 0;
+    text-align: center;
+}
+.carousel{
+    margin: 3rem auto 0;
+    max-width: 60%;
+    padding: 0 auto;
+}
+.education-part{
+    margin: 2rem 0;
+    padding: 3rem 1rem ;
+    border-radius: 3%;
+    display: inline-block;
+    max-width: 470px;
+    height: 570px;
+    text-align: left;
+    box-shadow: 3px 3px 8px 8px rgb(236, 236, 236);
+}
+.carousel-img{
+    display: block;
+    width: 250px;
+    margin: 0 auto 2rem;
+}
+/* *********************** Hire Me Section ********************* */
+.hire-me-section{
+    background-color: var(--grey-1);
+    padding: 3rem 2rem; 
+}
+.hire-me{
+    display: block;
+    max-width: 950px;
+    min-height: 250px;
+    color: white;
+    border-radius: 32px;
+    padding: 3rem 3rem; 
+    margin: 3rem auto ;
+    background-image: radial-gradient(ellipse at 200% -500%,transparent 80%, var(--coral10) 80%),radial-gradient(ellipse at -30% -700%,var(--coral8) 80%,transparent 80%), linear-gradient(145deg,  var(--coral7) 30%, var(--coral8) 90%);
+     
+}
+.hire-me > .btn{
+    margin-top: 1rem;
+    width: fit-content;
+    background-color: black;
+    color: white;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.footer{
+    padding-top: 4rem ;
+    text-align: center;
+    height: 150px;
+    /* background-color: var(--grey-2); */
+}
+.linkedIn{
+    width: 20px;
+    display: inline-block;
+}
+a{
+    width: 20px;
+    display: inline-block;
+}
+.p-footer{
+    font-weight: 500;
+    display: inline-block;
+}
+
+/* Query Media's */
+
+@media(max-width: 1090px) {
+    .homeSection{
+        text-align: center;
+    } 
+    .profile-intro{
+        flex-direction: column;
+    }   
+    .carousel{
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 700px){
+    .skill{
+        width: 120px;
+    }
+    .pl{
+        width: 90px;
+        padding: 1rem;
+    }
+    .hire-me-form{
+        width: 100%
+    }
+    .projects-container{
+        display: block;
+    }
+    .project{
+        margin: 0 auto;
+    }
+}
